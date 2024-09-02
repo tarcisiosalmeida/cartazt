@@ -1,0 +1,208 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*Menu de navegação*/
+
+@media print {
+  /* esconder tudo */
+  body * {
+    visibility: hidden;
+  }
+
+  /* exibir somente o que tem na div para imprimir */
+  #cartaz, #cartaz * {
+    visibility: visible;
+    font-size: 39pt;
+  }
+  #cartaz {
+    position: fixed;
+    top: 50vh; left: 50vw; transform: translate(-50%, -50%);
+    width: 800px;
+    
+  }
+
+  #cartaz img{
+    width: 150px;
+    margin-right: 900px;
+    position: relative;
+    bottom: 200px;
+    display: block;
+    
+  }
+
+  #cartaz h1{
+    font-size: 60pt;
+    margin-bottom: 50px;
+  }
+
+  #productor-name{
+    font-size: 50pt;
+  }
+
+  #preview-valor-vista {
+    font-size: 60pt;
+    margin-bottom: 30px;
+  }
+
+  #preview-valor-prazo{
+    font-size: 100pt;
+  }
+
+  #card{
+    font-weight: 100;
+    font-size: 12pt;
+    
+  }
+
+  #ou{
+    font-size: 20pt;
+  }
+
+  @page{
+    margin: 0;
+  }
+  
+}
+
+header .navbar{
+  background-color:#005a98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  
+}
+
+header .navbar .menu .itens ul{
+  display: flex;
+  gap: 30px;
+  color: aliceblue;
+  list-style: none;
+}
+
+header .navbar .itens a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*conteudo principal*/
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  
+}
+
+main .principal {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  border: 1px solid rgba(100, 100, 100, 0.315);
+  border-radius: 1%;
+  padding: 20px;
+  
+}
+
+/*Conteudo da esquerda*/
+main .principal .content-left{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(100, 100, 100, 0.315);
+  border-radius: 3%;
+  padding: 10px;
+  
+}
+
+main .principal .content-left-form form label {
+display: flex;
+flex-direction: row;
+font-size: 14pt;
+font-weight: 500;
+}
+
+main .principal .content-left-form form input {
+  width: 250px;
+  }
+
+main .principal .content-left-form .nome-produto{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .principal .content-left-form .valor-vista{
+  margin-bottom: 10px;
+}
+
+main .principal .content-left-form .valor-prazo{
+  margin-bottom: 10px;
+}
+
+/*Conteudo da direita*/
+
+main .principal .content-right{
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(100, 100, 100, 0.315);
+  border-radius: 3%;
+  padding: 10px;
+  
+}
+
+main .principal .content-right .content-right-title h1{
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+button{
+  margin-top: 50px;
+  padding: 9px;
+  border: none;
+  background-color: #005a98;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: 500;
+  transition: .5s;
+  border-radius: 5%;
+  
+}
+
+button:hover{
+  opacity: 50%;
+  scale: 103%;
+  cursor: pointer;
+}
+
+main .principal .content-right #cartaz h2{
+  text-transform: uppercase;
+  font-size: 20pt;
+}
+
+#cartaz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cartaz h2{
+  text-align: center;
+}
+
+#card{
+  font-weight: 100;
+  
+}
+
+
+
+

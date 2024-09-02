@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartaz T</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="assets/logo___5e160e9a46a9edb08a4e37000521e169 (1).svg" alt="" srcset="">
+      </div>
+      <div class="menu">
+        <div class="itens">
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+      </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="principal">
+      <div class="content-left">
+        <div class="content-left-title">
+          <h1>Faça seu cartaz</h1>
+        </div>
+        <div class="content-left-form">
+          <form action="#">
+            <div class="nome-produto">
+              <label for="">Nome do produto:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="valor-vista">
+              <label for="money">Valor a vista: R$</label>
+              <input type="text" id="valor-vista" class="money" placeholder="R$0,00">
+            </div>
+
+            <div class="parcelas">
+              <label for="opcoes">parcelas:</label>
+                <select id="opcoes">
+                  <option value="">Selecione as parcelas</option>
+                  <option value="3x">3</option>
+                  <option value="6x">6</option>
+                  <option value="10x">10</option>
+                  <option value="12x">12</option>
+                </select>
+            </div>
+
+            <div class="valor-prazo">
+              <label for="">Valor a prazo: R$</label>
+              <input type="text" id="valor-prazo" >
+            </div>
+
+           
+
+            
+          </form>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="content-right-title">
+          <h1>Vizualização</h1>
+        </div>
+        <div id="cartaz">
+          <h1>OFERTA</h1>
+          <h2><span id="productor-name"></span></h2>
+          <h3>A vista: <span id="preview-valor-vista"></span></h3>
+          
+          <h3><span id="resultado"></span> de R$<span id="preview-valor-prazo"></span><span id="card"> (Cartão crédito)</span></h3>
+        </div>
+        <button onclick="printPage()" class="printButton">IMPRIMIR CARTAZ</button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
