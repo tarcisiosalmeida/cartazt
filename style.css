@@ -1,10 +1,9 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /*Menu de navegação*/
 
@@ -17,68 +16,63 @@
   /* exibir somente o que tem na div para imprimir */
   #cartaz, #cartaz * {
     visibility: visible;
-    font-size: 39pt;
+    font-size: 20pt;
   }
   #cartaz {
     position: fixed;
     top: 50vh; left: 50vw; transform: translate(-50%, -50%);
     width: 800px;
-    
   }
 
-  #cartaz img{
-    width: 150px;
-    margin-right: 900px;
-    position: relative;
-    bottom: 200px;
-    display: block;
-    
-  }
-
-  #cartaz h1{
+  #cartaz h1 {
     font-size: 60pt;
     margin-bottom: 50px;
   }
 
-  #productor-name{
+  #productor-name {
     font-size: 50pt;
   }
 
   #preview-valor-vista {
-    font-size: 60pt;
+    font-size: 40pt;
     margin-bottom: 30px;
+    font-weight: 700;
   }
 
-  #preview-valor-prazo{
-    font-size: 100pt;
+  #preview-valor-prazo {
+    font-size: 59pt;
   }
 
-  #card{
+  #card {
     font-weight: 100;
     font-size: 12pt;
-    
   }
 
-  #ou{
+  #ou {
     font-size: 20pt;
   }
 
-  @page{
+  @page {
     margin: 0;
   }
-  
 }
 
-header .navbar{
-  background-color:#005a98;
+/* Estilos para telas maiores */
+header .navbar {
+  background-color: #005a98;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  
 }
 
-header .navbar .menu .itens ul{
+header .navbar .logo {
+  display: flex;
+  gap: 20px;
+}
+
+header .navbar .menu .itens ul {
   display: flex;
   gap: 30px;
   color: aliceblue;
@@ -90,120 +84,168 @@ header .navbar .itens a {
   color: aliceblue;
 }
 
-/*conteudo principal*/
-
+/* Conteúdo principal */
 main {
   display: flex;
+  width: 100%;
   justify-content: center;
   margin-top: 75px;
-  
 }
 
 main .principal {
   display: flex;
   width: 1200px;
   justify-content: space-between;
-  border: 1px solid rgba(100, 100, 100, 0.315);
+  border: 2px solid #bfa96d;
   border-radius: 1%;
   padding: 20px;
-  
 }
 
-/*Conteudo da esquerda*/
-main .principal .content-left{
+/* Conteúdo da esquerda */
+main .principal .content-left {
   display: flex;
   width: 400px;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(100, 100, 100, 0.315);
+  border: 2px solid #bfa96d;
   border-radius: 3%;
   padding: 10px;
-  
 }
 
 main .principal .content-left-form form label {
-display: flex;
-flex-direction: row;
-font-size: 14pt;
-font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  font-size: 14pt;
+  font-weight: 500;
 }
 
 main .principal .content-left-form form input {
   width: 250px;
-  }
+}
 
-main .principal .content-left-form .nome-produto{
+main .principal .content-left-form .nome-produto {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-main .principal .content-left-form .valor-vista{
+main .principal .content-left-form .valor-vista {
   margin-bottom: 10px;
 }
 
-main .principal .content-left-form .valor-prazo{
+main .principal .content-left-form .valor-prazo {
   margin-bottom: 10px;
 }
 
-/*Conteudo da direita*/
-
-main .principal .content-right{
+/* Conteúdo da direita */
+main .principal .content-right {
   display: flex;
-  width: 700px;
+  width: 600px;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(100, 100, 100, 0.315);
+  border: 2px solid #bfa96d;
   border-radius: 3%;
   padding: 10px;
-  
 }
 
-main .principal .content-right .content-right-title h1{
+main .principal .content-right .content-right-title h1 {
   font-size: 12pt;
   font-weight: 500;
 }
 
-button{
+button {
   margin-top: 50px;
   padding: 9px;
   border: none;
   background-color: #005a98;
-  color: #fff;
+  color: #dfc788;
   font-size: 12pt;
   font-weight: 500;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 5%;
-  
 }
 
-button:hover{
+button:hover {
   opacity: 50%;
   scale: 103%;
   cursor: pointer;
 }
 
-main .principal .content-right #cartaz h2{
+main .principal .content-right #cartaz h2 {
   text-transform: uppercase;
   font-size: 20pt;
 }
 
-#cartaz{
+#cartaz {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#cartaz h2{
-  text-align: center;
+#cartaz img {
+  width: 150px;
   margin-bottom: 30px;
 }
 
-#card{
-  font-weight: 100;
-  
+#cartaz h2 {
+  text-align: center;
+  margin-bottom: 45px;
+  font-weight: 400;
+}
+
+#card {
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 200px;
+  height: 100px;
+  background-color: #bfa96d;
+}
+
+footer p {
+  color: #fff;
+  font-size: 15pt;
+}
+
+#grupo-gm {
+  width: 80px;
 }
 
 
+@media screen and (max-width: 600px) {
+  header .navbar {
+    padding: 0 5px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  header .navbar .menu .itens ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  main .principal {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    border: none; 
+  }
+
+  main .principal .content-left,
+  main .principal .content-right {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+    padding: 10px;
+  }
+}
